@@ -1,0 +1,21 @@
+.tabela table{
+	margin: 0 auto; 
+	max-width: 800px;
+	padding: 50px;
+	background-color: red;
+}
+
+.tabela th {
+	font-family: ubuntu;
+	font-size: 2em;
+	color: orange;
+	text-align: justify;
+}
+
+.tabela td {
+	font-family: monospace;
+	font-size: 1.1em;
+	color: blue;
+	text-align: left;
+}
+

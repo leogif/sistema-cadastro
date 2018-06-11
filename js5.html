@@ -1,0 +1,21 @@
+
+<html>
+<title> Background Colors</title>
+<body id = "une">
+<h1> <b> www.infolet.org </b> </h1>
+<form name = "myform">
+<input type = "text" name="colorname">
+<input type = "text" name="colorname2">
+<input type = "button" value = "Change color" onclick="changecolor2()">
+</form>
+</body>
+
+<script type="text/javascript">
+function changecolor2(){
+	var clr = document.myform.colorname.value;var clr2 = document.myform.colorname2.value;
+	var temp = document.getElementById("une");
+	var changeclr = "linear, 20 50, 50 10, color-stop(0, " + clr + "), color-stop(100, " + clr2 + ")";
+	temp.style.backgroundImage = "-webkit-gradient(" + changeclr + ")";
+}
+</script>
+</html>

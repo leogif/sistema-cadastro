@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Pesquisa</title>
+	<link rel="stylesheet" href="css/busca.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/animate-js.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500" rel="stylesheet">
+</head>
+<body>
+	<!-- 
+		FORMULARIO CONTENDO UM SELECT COM 3 OPTION, NOTE QUE OS VALUE QUE SERÃO ENVIADOS PARA O pesquisa-resultado.php VIA METHOD POST
+		NÃO ESQUEÇA DE SEGUIR UM PADRÃO SE UTILIZAR MAIUSCULAS 
+
+	-->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8">
+				<h1>Pesquisa</h1><br>
+				<form class="form-group" action="pesquisa-resultado.php" method="POST">
+				<label>Selecione o Sexo do Cliente:</label>
+				<select class="form-control" name="sexo">
+				  <option value="M">Masculino</option>
+				  <option value="F">Feminino</option>
+				  <option value="N">Não Declarado</option>
+				</select><br>
+				<input class="btn btn-lg btn-primary" type="submit" name="enviar" value="Enviar">
+				</form>		
+			</div>
+		</div>
+	</div>
+	
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/wow.min.js"></script>
+</body>
+</html>

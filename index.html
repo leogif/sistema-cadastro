@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Meu Formulario</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/form.css">
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500" rel="stylesheet">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/animate-js.css">  
+	<style>
+		body {
+			background-color: #9b59b6;
+			color: #000;
+		}
+	</style>
+</head>
+<body>
+
+	<h2 class="animated slideInLeft">Cadastro de Clientes</h2>
+	<form action="dados.php" method="GET">
+		<div class="">
+			<!-- Nome -->
+			<label class="animated zoomIn" for="nome">Nome</label>
+			<input type="text" class="form-control" name="nome" placeholder="Informe o nome do cliente.." required>
+			<br/>
+			<br/>
+			<!-- Telefone -->
+			<label class="animated zoomIn" for="telefone">Telefone</label>
+			<input type="tel" class="form-control" name="telefone" placeholder="Informe número para contato.." required>
+			<br/>
+			<br/>
+			<label class="animated zoomIn" for="sexo">Sexo</label>
+			<select name="sexo" class="form-control">
+				<option value="M">Masculino</option>
+				<option value="F">Feminino</option>
+				<option value="N">Não Declarado</option>
+			</select>
+		<br/>
+		<br/>
+		<button class="btn btn-primary btn-lg wow bounce" type="submit">Cadastrar</button>
+		<a class="btn btn-default btn-lg animated rotateIn" href="consulta.php" style="float:right;">Consultar Dados</a>
+		</div>
+	</form>
+		
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script>new WOW().init();</script>
+</body>
+</html>

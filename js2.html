@@ -1,0 +1,17 @@
+<html>
+<title> Background Colors </title>
+<body>
+<h1> <b> www.infolet.org </b> </h1>
+<form name="myform">
+<input type="text" name="colorname">
+<input type ="button" value ="Change color" onclick = "changecolor()">
+</form>
+</body>
+
+<script type = "text/javascript">
+function changecolor(){
+var clr = document.myform.colorname.value;
+document.bgColor = clr;
+}
+</script>
+</html> 
