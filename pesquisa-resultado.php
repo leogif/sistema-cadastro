@@ -13,12 +13,9 @@
 	echo "<th>TELEFONE</th>";			
 	echo "<th>SEXO</th>";			
 	echo "</tr>";
-
 	//PREENCHENDO A TABELA COM OS DADOS DO DB: -->
- 
 	$sql = "SELECT * FROM cliente WHERE sexo = '$pesquisa'";
 	$resultado = mysqli_query($conn, $sql) or die ('Erro ao retornar dados');
-
 	// OBTENDO OS DADOS POR MEIO DE UM LOOP WHILE
 	while($registro = mysqli_fetch_array($resultado)){
 		$nome = $registro['nome'];
